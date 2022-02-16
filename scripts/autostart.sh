@@ -21,7 +21,7 @@ function run {
 
 #change your keyboard if you need it
 #setxkbmap -layout be
-setxkbmap us,es -option grp:alt_space_toggle
+setxkbmap us,es -option grp:alt_space_toggle,ctrl:swap_lalt_lctl
 
 #cursor active at boot
 xsetroot -cursor_name left_ptr &
@@ -33,9 +33,6 @@ run dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
 #feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
 #start the conky to learn the shortcuts
 #(conky -c $HOME/.xmonad/scripts/system-overview) &
-
-#swap ctrl alt
-xmodmap ~/.Xmodmap
 
 #starting utility applications at boot time
 #run variety &
